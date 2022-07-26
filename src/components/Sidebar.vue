@@ -16,11 +16,11 @@
 				<span class="material-icons">home</span>
 				<span class="text">Accueil</span>
 			</router-link>
-			<router-link to="/about" class="button">
+			<router-link to="/movies" class="button">
 				<span class="material-icons">list</span>
 				<span class="text">Les films</span>
 			</router-link>
-			<router-link to="/team" class="button">
+			<router-link to="/about" class="button">
 				<span class="material-icons">screen_search_desktop</span>
 				<span class="text">A propos</span>
 			</router-link>
@@ -33,9 +33,9 @@
 		<div class="flex"></div>
 		
 		<div class="menu">
-			<router-link to="/settings" class="button">
+			<router-link to="/login" class="button">
 				<span class="material-icons">account_circle</span>
-				<span class="text">Profil</span>
+				<span class="text">Connexion</span>
 			</router-link>
 		</div>
 	</aside>
