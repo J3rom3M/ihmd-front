@@ -15,8 +15,8 @@
         <p>{{ movie.language }}</p>
         <br />
         <p>Année de production: </p>
-        <p>{{ movie.releaseDate }}</p>
-        <br /> -->
+        <p>{{ formattedDate }}</p>
+        <br />
 	</main>
 </template>
 <script>
@@ -25,11 +25,12 @@ import moment from 'moment'
 
     export default {
         name: 'movie',
-        // computed: {
-        //     formattedDate(){
-        //     return moment(this.movie.releaseDate).format('DD-MM-YYYY');
-        //     },
-        // },
+        computed: {
+            formattedDate(){
+                return moment(this.movie.releaseDate).format('DD-MM-YYYY');
+            },
+        },
+
 
         data(){
             return {

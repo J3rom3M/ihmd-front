@@ -10,9 +10,11 @@
 
 <script setup>
 import Sidebar from './components/Sidebar.vue'
+// import Bootstrap from 'bootstrap'
 </script>
 
 <style lang="scss">
+
 :root {
 	--primary: #4ade80;
 	--primary-alt: #22c55e;

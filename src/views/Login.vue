@@ -1,17 +1,22 @@
 <template>
-	<main id="login-page">
+	<main id="login-page" class="container">
+        <h1>Connexion</h1>
+        <br />
+        <br />
+		<p>Veuillez saisir vos identifiants :</p>
+        <br />
         <div class="login">
-            <div>
+            <div class="form-group">
             <form @submit.prevent="submit">
                 <div>
                 <label for="username">Username:</label>
-                <input type="text" name="username" v-model="form.username" />
+                <input type="text" class="form-control" name="username" v-model="form.username"  placeholder="Enter email" />
                 </div>
                 <div>
                 <label for="password">Password:</label>
-                <input type="password" name="password" v-model="form.password" />
+                <input type="password" class="form-control" name="password" v-model="form.password" placeholder="Password" />
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit" class="btn">Submit</button>
             </form>
             <p v-if="showError" id="error">Username or Password is incorrect</p>
             </div>
@@ -51,8 +56,6 @@ methods: {
 },
 };
 </script>
-
-<style>
 
 <style scoped>
 * {
